@@ -1,0 +1,30 @@
+\fancypagestyle{titlepagestyle}{
+    \fancyhf{}
+    \fancyhead[L]{
+        \fontsize{8}{9.2} \selectfont
+        \studyProgram \\
+        \textbf{\academicYear} \\
+    }
+    \fancyhead[R]{\includegraphics{images/logo.png}}
+    \fancyheadoffset[rh]{20mm}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand\footrulewidth{0pt}
+}
+
+\fancypagestyle{pagestyle}{
+    \fancyhf{}
+    \fancyhead[L]{
+        \fontsize{8}{9.2} \selectfont
+        \university, \studyProgram \\
+        \academicYear \\
+        \candidateName \\
+        \thesisTitle \\
+    }
+    \fancyhead[R]{\includegraphics{images/logo.png}}
+    \fancyfoot[C]{- {\thepage} -}
+    \fancyheadoffset[rh]{20mm}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand\footrulewidth{0pt}
+}
+
+\pagestyle{pagestyle}

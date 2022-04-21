@@ -1,0 +1,44 @@
+% set document margins
+\geometry{
+ left=20mm,
+ right=20mm,
+ top=35mm,
+ bottom=20mm,
+ headheight=20mm,
+ headsep=5mm
+ }
+ 
+ % set Helvetica as default font - it is the same as Arial
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.15} 
+\setlength{\parindent}{1.5cm}
+
+% set chapter titles format
+\titleformat
+{\chapter}
+[hang]
+{\bfseries\fontsize{14pt}{18pt}\selectfont\MakeUppercase} % format
+{\thechapter. }
+{0cm}
+{\centering}
+
+\titlespacing
+{\chapter}
+{0cm}
+{0pt}
+{24pt}
+
+% set section titles format
+\titleformat
+{\section}
+[hang]
+{\bfseries\fontsize{12pt}{16pt}\selectfont\MakeUppercase} % format
+{\thesection}
+{6.3mm}
+{}
+
+\titlespacing
+{\section}
+{0pt}
+{12pt}
+{12pt}

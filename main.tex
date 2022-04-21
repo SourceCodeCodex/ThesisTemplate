@@ -1,0 +1,37 @@
+\documentclass[12pt, twoside, romanian]{report}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{helvet}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{abstract}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\usepackage[style=ieee]{biblatex}
+
+\addbibresource{bibliography.bib}
+
+\include{customs}
+\include{components/Format}
+\include{components/Styles}
+
+\begin{document}
+
+\include{chapters/1 - Title}
+\include{chapters/2 - AbstractRO}
+\include{chapters/3 - AbstractEN}
+\include{chapters/4 - Introduction}
+\include{chapters/5 - Body}
+\include{chapters/6 - Conclusions}
+
+% Look for building the .bib file on Overleaf documentation
+
+\printbibliography
+\thispagestyle{pagestyle}
+
+\end{document}
