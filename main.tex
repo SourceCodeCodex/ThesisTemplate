@@ -11,10 +11,27 @@
 \usepackage{enumitem}
 \usepackage{multirow}
 \usepackage{amsmath}
+\usepackage[chapter]{minted}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
 
 \usepackage[style=ieee]{biblatex}
 
 \addbibresource{bibliography.bib}
+
+\definecolor{LightGray}{gray}{0.95}
+\setminted[java] {
+style=vs,
+frame=single,
+bgcolor=LightGray,
+linenos
+}
+
+\renewcommand{\listingscaption}{Cod}
+\renewcommand{\thelisting}{\thechapter.\arabic{listing}}
+\crefname{listing}{Cod}{Cod}
+\crefname{figure}{Figura}{Figura}
 
 \include{customs}
 \include{components/Format}

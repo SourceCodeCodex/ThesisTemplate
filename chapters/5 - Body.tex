@@ -50,3 +50,20 @@ Formulele utilizate în text se vor numerota în ordinea apariției în lucrare.
 \begin{equation}
 A=\pi*r^2
 \end{equation}
+
+\section{Cod}
+
+\begin{listing}[H]
+	\begin{minted}{java}
+public class Client {
+    public static void main(String[] args) {
+        Animal tiger = new Tiger();
+        Animal parrot = new Parrot();
+        tiger.breed(parrot);
+    }
+}
+	\end{minted}
+	\caption{Exemplu polimorfism de subtip - Cod client \label{cod:cod2.1}}
+\end{listing}
+
+Flexibilitatea pe care o oferă polimorfismul se poate observa în \cref{cod:cod2.1} la liniile \textit{(3)}, respectiv \textit{(4)}. Variabilele referință \textit{tiger} și \textit{parrot}, deși sunt de tip \textit{Animal}, pot referi obiecte de tipul \textit{Tiger}, respectiv \textit{Parrot}. Totuși, această flexibilitate devine o problemă în contextul apelului metodei de la linia \textit{(5)}, întrucât „împerecherea” ar avea sens doar între obiecte ale aceluiași tip.
